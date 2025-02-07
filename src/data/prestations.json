@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Coupe simple",
+    "image": "./src/assets/images/prestations/coupe-simple.webp",
+    "price": 60
+  },
+  {
+    "name": "Brushing",
+    "image": "./src/assets/images/prestations/brushing.webp",
+    "price": 55
+  },
+  {
+    "name": "Coupe + Brushing",
+    "image": "./src/assets/images/prestations/brushing2.webp",
+    "price": 90
+  },
+  {
+    "name": "Coloration",
+    "image": "./src/assets/images/prestations/coloration.webp",
+    "price": "Sur devis"
+  },
+  {
+    "name": "Mariage",
+    "image": "./src/assets/images/prestations/mariage.webp",
+    "price": "Sur devis"
+  }
+]

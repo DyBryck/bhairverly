@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-logo: "Mea Culpa", serif;
+  --font-title: "Montserrat", serif;
+  --font-corps: "Roboto Flex", serif;
+}
+
+@theme {
+  --spacing-prestations: clamp(200px, 55%, 250px);
+}
+
+@theme {
+  --color-light-pink: #f3dad8;
+  --color-secondary: #d6d9ce;
+}
+
+@theme {
+  --animate-show-nav: show-nav 1s forwards;
+
+  @keyframes show-nav {
+    from {
+      right: -100%;
+    }
+    to {
+      right: 0;
+    }
+  }
+}
+
+@theme {
+  --animate-hide-nav: hide-nav 1s forwards;
+
+  @keyframes hide-nav {
+    from {
+      right: 0;
+    }
+    to {
+      right: -100%;
+    }
+  }
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+}
+
+label span {
+  border-radius: 10px;
+  height: 5px;
+  margin: 5px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 50%;
+}
+
+span:nth-of-type(2) {
+  width: 100%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(5px, 0px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(22px, -8px) rotatez(45deg);
+}

@@ -1,0 +1,8 @@
+[
+  { "name": "Beverly", "cover": "./src/assets/images/coiffeuses/beverly.webp" },
+  { "name": "Rose", "cover": "./src/assets/images/coiffeuses/rose.webp" },
+  {
+    "name": "Valentine",
+    "cover": "./src/assets/images/coiffeuses/valentine.webp"
+  }
+]

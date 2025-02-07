@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "MASQUE BEURRE HAUTE NUTRITION CURL MANIFESTO KÉRASTASE 200ML",
+    "cover": "./src/assets/images/products/masque-beurre/cover.jpg",
+    "price": "52.90",
+    "pictures": [
+      "./src/assets/images/products/masque-beurre/picture-1.jpg",
+      "./src/assets/images/products/masque-beurre/picture-2.jpg",
+      "./src/assets/images/products/masque-beurre/picture-3.jpg",
+      "./src/assets/images/products/masque-beurre/picture-4.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "HUILE GLOSS RÉPARATRICE PREMIÈRE KÉRASTASE 30ML",
+    "cover": "./src/assets/images/products/huile-gloss/cover.webp",
+    "price": "48.90",
+    "pictures": [
+      "/src/assets/images/products/huile-gloss/picture-1.jpg",
+      "/src/assets/images/products/huile-gloss/picture-2.jpg",
+      "/src/assets/images/products/huile-gloss/picture-3.jpg",
+      "/src/assets/images/products/huile-gloss/picture-4.jpg",
+      "/src/assets/images/products/huile-gloss/picture-5.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "MASQUE RÉPARATEUR CHEVEUX SENSIBILISÉS AUTHENTIC BEAUTY CONCEPT 200ML",
+    "cover": "./src/assets/images/products/masque-reparateur/cover.jpg",
+    "price": "40.65",
+    "pictures": [
+      "./src/assets/images/products/masque-reparateur/picture-1.webp",
+      "./src/assets/images/products/masque-reparateur/picture-2.webp"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "MASQUE BEURRE HAUTE NUTRITION CURL MANIFESTO KÉRASTASE 500ML",
+    "cover": "./src/assets/images/products/haute-nutrition/cover.jpg",
+    "price": "55.47",
+    "pictures": [
+      "./src/assets/images/products/haute-nutrition/picture-1.jpg",
+      "./src/assets/images/products/haute-nutrition/picture-2.jpg",
+      "./src/assets/images/products/haute-nutrition/picture-3.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "OLAPLEX BONDING OIL N°7 30ML",
+    "cover": "./src/assets/images/products/olaplex/cover.jpg",
+    "price": "24.90",
+    "pictures": [
+      "./src/assets/images/products/olaplex/picture-1.jpg",
+      "./src/assets/images/products/olaplex/picture-2.png"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "HUILE MOROCCANOIL ORIGINALE 100ML",
+    "cover": "./src/assets/images/products/moro/cover.jpg",
+    "price": "49.50",
+    "pictures": [
+      "./src/assets/images/products/moro/picture-1.jpg",
+      "./src/assets/images/products/moro/picture-2.jpg"
+    ]
+  }
+]
