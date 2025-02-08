@@ -2,7 +2,7 @@ import wave from "../assets/images/wave.svg";
 import products from "../data/produits.json";
 import Product from "./Product";
 
-const Produits = () => {
+const Products = () => {
   return (
     <section id="produits" className="bg-light-pink mt-[-1px]">
       <div className="-mt-[1px] flex flex-col items-center justify-center gap-4 pt-4 md:gap-8">
@@ -22,4 +22,4 @@ const Produits = () => {
   );
 };
 
-export default Produits;
+export default Products;

@@ -2,7 +2,7 @@ import Coiffeuses from "./components/Coiffeuses";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Prestations from "./components/Prestations";
-import Produits from "./components/Produits";
+import Products from "./components/Products";
 import Video from "./components/Video";
 
 function App() {
@@ -24,7 +24,7 @@ function App() {
       </svg>
       <div className="bg-white">
         <Prestations />
-        <Produits />
+        <Products />
         <Coiffeuses />
       </div>
       <Footer />

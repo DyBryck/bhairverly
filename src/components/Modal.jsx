@@ -1,9 +1,32 @@
 import PropTypes from "prop-types";
+import { useCallback, useEffect } from "react";
 import Carousel from "./Carousel";
 
-const Modal = ({ product, closeModal }) => {
+const Modal = ({ product, onClose }) => {
+  const closeModal = useCallback(() => {
+    setTimeout(onClose, 0);
+  }, [onClose]);
+
+  useEffect(() => {
+    document.body.classList.add("overflow-hidden");
+
+    const handleEsc = (event) => {
+      if (event.key === "Escape") {
+        closeModal();
+      }
+    };
+
+    document.addEventListener("keydown", handleEsc);
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+      document.removeEventListener("keydown", handleEsc);
+    };
+  }, [closeModal]);
+
   return (
     <div
+      id="modal-background"
       className="fixed top-0 left-0 z-20 flex h-full w-full items-center justify-center backdrop-brightness-50"
       onClick={closeModal}
     >
@@ -26,7 +49,7 @@ const Modal = ({ product, closeModal }) => {
 
 Modal.propTypes = {
   product: PropTypes.object.isRequired,
-  closeModal: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
 };
 
 export default Modal;

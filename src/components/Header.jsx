@@ -52,7 +52,11 @@ const Header = () => {
         <span className="bg-stone-700 lg:hidden"></span>
       </label>
       <nav
-        className={`${isOpen ? "animate-show-nav flex" : "animate-hide-nav"} font-title bg-light-pink fixed top-[76px] right-[-40%] p-4 text-xl shadow md:top-[96px] md:text-3xl lg:hidden`}
+        className={`font-title bg-light-pink fixed top-[76px] right-[-40%] p-4 text-xl shadow transition-all duration-300 md:top-[96px] md:text-3xl lg:hidden ${
+          isOpen
+            ? "animate-show-nav pointer-events-auto opacity-100"
+            : "animate-hide-nav pointer-events-none opacity-0"
+        }`}
       >
         <ul className="flex flex-col gap-4 uppercase">
           <div className="h-[1px] bg-stone-700"></div>
