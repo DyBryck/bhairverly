@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Coiffeuse = ({ name, cover }) => {
+const HairDresser = ({ name, cover }) => {
   return (
     <div className="flex w-2/3 flex-col items-center justify-center gap-2">
       <div className="h-40 w-40 overflow-hidden rounded-full md:h-60 md:w-60">
@@ -11,9 +11,9 @@ const Coiffeuse = ({ name, cover }) => {
   );
 };
 
-Coiffeuse.propTypes = {
+HairDresser.propTypes = {
   name: PropTypes.string.isRequired,
   cover: PropTypes.string.isRequired,
 };
 
-export default Coiffeuse;
+export default HairDresser;

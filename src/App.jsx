@@ -1,8 +1,8 @@
-import Coiffeuses from "./components/Coiffeuses";
 import Footer from "./components/Footer";
+import HairdresserList from "./components/HairdresserList";
 import Header from "./components/Header";
-import Prestations from "./components/Prestations";
-import Products from "./components/Products";
+import ProductList from "./components/ProductList";
+import ServiceList from "./components/ServiceList";
 import Video from "./components/Video";
 
 function App() {
@@ -23,9 +23,9 @@ function App() {
         ></path>
       </svg>
       <div className="bg-white">
-        <Prestations />
-        <Products />
-        <Coiffeuses />
+        <ServiceList />
+        <ProductList />
+        <HairdresserList />
       </div>
       <Footer />
     </>

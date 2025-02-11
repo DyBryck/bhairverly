@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-const Prestation = ({ image, name, price }) => {
+const Service = ({ image, name, price }) => {
   return (
     <article
       className={`border-secondary h-60 w-5/6 border-4 bg-cover bg-center bg-no-repeat md:h-60 md:max-w-1/3`}
@@ -16,7 +16,7 @@ const Prestation = ({ image, name, price }) => {
   );
 };
 
-Prestation.propTypes = {
+Service.propTypes = {
   image: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   price: PropTypes.oneOfType([
@@ -25,4 +25,4 @@ Prestation.propTypes = {
   ]),
 };
 
-export default Prestation;
+export default Service;

@@ -22,7 +22,7 @@ const Carousel = ({ product }) => {
       <div className="relative h-[200px] w-[300px] overflow-hidden">
         <AnimatePresence initial={false} custom={direction}>
           <motion.img
-            key={index} // Change l'image quand l'index change
+            key={index}
             src={array[index]}
             alt=""
             className="absolute h-full w-full object-cover"

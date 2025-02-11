@@ -1,4 +1,5 @@
 import { useState } from "react";
+import NavLink from "./NavLink";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,32 +11,23 @@ const Header = () => {
       </a>
       <nav>
         <ul className="font-title hidden gap-8 text-lg uppercase lg:flex">
-          <li>
-            <a
-              href="#prestations"
-              className="underline-offset-4 transition-all duration-300 hover:text-white hover:underline"
-            >
-              Prestations
-            </a>
-          </li>
+          <NavLink
+            content="Prestations"
+            link="#service-list"
+            isForDesktop={true}
+          />
           <div className="w-[1px] bg-stone-700"></div>
-          <li>
-            <a
-              href="#produits"
-              className="underline-offset-4 transition-all duration-300 hover:text-white hover:underline"
-            >
-              Produits
-            </a>
-          </li>
+          <NavLink
+            content="Produits"
+            link="#product-list"
+            isForDesktop={true}
+          />
           <div className="w-[1px] bg-stone-700"></div>
-          <li>
-            <a
-              href="#coiffeuses"
-              className="underline-offset-4 transition-all duration-300 hover:text-white hover:underline"
-            >
-              Coiffeuses
-            </a>
-          </li>
+          <NavLink
+            content="Coiffeuses"
+            link="#hairdresser-list"
+            isForDesktop={true}
+          />
         </ul>
       </nav>
       <label htmlFor="check" className="cursor-pointer lg:!hidden">
